@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(134, 161, 204);
+}
+
+.banner{
+    
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 150px;
+    background: url(bannerduck.jpg);
+    background-position: 30%;
+    background-position-y: -330px;
+    background-repeat: no-repeat;
+    
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    grid-template-columns: 1 2 1;
+    
+}
+.title{
+    color: peru;
+    margin-top: 3px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.Home{
+    display: flex;
+    margin-left: 15%;
+    margin-top: -15px;
+    
+    width: 120px;
+    text-decoration: none;
+    font-size: 3em;
+    
+}
+
+.infotje{
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 32%;
+    margin-right: 30%;
+    
+    
+    border-radius: 10px;
+    font-size: 25px;
+
+}
+
+.Info{
+    display: flex;
+    margin-left: 47%;
+    margin-top: -50px;
+    
+    width: 80px;
+    text-decoration: none;
+    font-size: 3em;
+   
+}
+
+.Foto{
+    display: flex;
+    margin-left: 80%;
+    margin-top: -60px;
+   
+    width: 120px;
+    text-decoration: none;
+    font-size: 3em;
+    
+}
+
+.banner a:hover{
+    color: purple;
+    
+}
+
+
+.banner a{
+    color: rgb(38, 112, 38);
+    
+}
+
+.intro{
+    margin-top: 15%;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: darkgreen;
+}
+
+.intro img{
+    margin-top: 3%;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+h1{
+    text-align: center;
+    color: orangered;
+    margin: 30px 0 50px;
+}
+
+.gallery img{
+    margin-top: 30%;
+    width: 230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px 0 50px 20px;
+    
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 480px){
+    .intro{
+        margin-top: 40%;
+    }
+
+    .Home{
+        margin-left: 7%;
+    }
+    
+    .Info{
+        margin-left: 42%;
+        margin-top: -12%;
+    }
+
+    .Foto{
+        margin-left: 68%;
+        margin-top: -12%;
+    }
+
+    .infotje{
+        width: 400px;
+        margin-top: 45%;
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+}
