@@ -164,4 +164,17 @@ h1{
         margin-left: 5%;
         font-size: 1.5em;
     }
+
+    .gallery img{
+        width: 90px;
+        padding: 5px;
+    }
+    
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .extra{
+        margin-left: 100%;
+    }
 }
